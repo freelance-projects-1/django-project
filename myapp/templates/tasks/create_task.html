@@ -4,7 +4,8 @@
 <h1>Create new task</h1>
 <!-- <input type="text">
 <textarea name="description" id="" cols="30" rows="10"></textarea> -->
-<form action=" ">
+<form method="POST">
+  {% csrf_token %}
   {{form.as_p}}
   <button>
     save
